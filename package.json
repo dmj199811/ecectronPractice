@@ -1,0 +1,32 @@
+{
+  "name": "gameeditor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack:mac": "electron-builder build --mac"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "timer.js": "^1.0.4"
+  },
+  "build": {
+    "appId": "com.test.test",
+    "productName": "番茄钟",
+    "files": "app",
+    "copyright": "Copyright © 2020 dragon",
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "extends": null
+  }
+}
